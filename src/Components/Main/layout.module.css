@@ -1,0 +1,157 @@
+div{
+    color: var(--lavender);
+    font-weight: 500;
+}
+
+.main{
+
+  max-width: 727px;
+  width: 100%;
+  min-width: 380px;
+}
+
+@media (max-width: 1024px) {
+    .main {
+      max-width: 100%;
+    }
+  }
+
+.ticket{
+    display: flex;
+    flex-direction: column;
+    padding: 38px 10px 25px 10px;
+    background-color: var(--lightlavender);
+    border-radius: 10px;
+    margin-bottom: 47px;
+    align-items: end;
+}
+
+@media (min-width: 470px) {
+.ticket{
+    padding: 38px 39px 25px 38px;
+}
+}
+
+.price{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-bottom: 25px;   
+}
+
+.time,
+.duration,
+.transfer {
+    color: var(--purple);
+}
+
+.ticketFirstRaw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ticketSecondRaw{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+}
+
+.airports{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.time{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.durationLabel{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.transferLabel{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.duration{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.transfer{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.airline{
+    margin-bottom: 25px;   
+    
+}
+
+.block{
+    height: 55px;
+    max-width: 727px;
+    margin-bottom: 29px;
+    width: 100%;
+    border-radius: 10px;
+    background-color:  var(--lightlavender);
+    display: flex;
+    flex-direction: row;
+    flex:1;
+}
+    
+.first,
+.second,
+.third{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--purple);
+    color:  var(--purple);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.first{
+    border-radius: 10px 0 0 10px;
+}
+
+.third{
+    border-radius: 0 10px 10px 0;
+}
+
+.first:hover,
+.second:hover,
+.third:hover{
+    cursor: pointer;
+    background-color: var(--lavender);
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    background-color: var(--purple);
+    color: rgb(255, 255, 255);
+}
+
+
+.buttonMore{
+    background-color: var(--purple);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    height: 62px;
+    max-width: 727px;
+    width: 100%;
+}
+
+.buttonMore:hover{
+    background-color: var(--lavender);
+}

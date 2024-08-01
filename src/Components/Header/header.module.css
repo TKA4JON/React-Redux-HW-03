@@ -1,0 +1,27 @@
+.imgPlane{
+  max-height: 100px;
+  margin-right: 24px;
+}
+
+  h1 {
+    display: none;
+    
+  }
+  .header{
+    align-items: center;
+    height: 185px;
+    color: var(--purple);
+    height: 92px;
+  }
+  
+@media screen and (min-width: 768px) {
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    max-height: 185px;
+  }
+  h1 {
+    display: block;
+  }
+}
